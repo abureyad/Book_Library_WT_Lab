@@ -62,6 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <button type="submit">Sign Up</button>
         </form>
         <p>Already have an account? <a href="signin.php">Sign In</a></p>
+        <p>hint: skip to sign in to avoid new signup</p>
         <?php if ($error): ?>
             <p style="color: red; text-align: center;"><?php echo htmlspecialchars($error); ?></p>
         <?php endif; ?>

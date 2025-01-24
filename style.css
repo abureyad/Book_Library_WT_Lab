@@ -5,6 +5,10 @@ body {
     padding: 0;
     background-color: #f0f0f0;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 
@@ -117,13 +121,12 @@ body {
 }
 
 .form-container {
-    width: 30%;
-    height: 35%;
-    padding: 15px;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
     background-color: #e9effc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 14px;
 }
 
 .form-container h2 {
@@ -227,4 +230,12 @@ button:hover {
     .form-container {
         width: 100%;
     }
+}
+
+.login-credentials {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.5;
 }

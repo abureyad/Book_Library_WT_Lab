@@ -71,6 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <button type="submit">Sign In</button>
         </form>
         <p>Don’t have an account? <a href="signup.php">Sign Up</a></p>
+        <p>hint: ben@student.aiub.edu, ben10</p>
         <?php if ($error): ?>
             <p style="color: red; text-align: center;"><?php echo htmlspecialchars($error); ?></p>
         <?php endif; ?>
