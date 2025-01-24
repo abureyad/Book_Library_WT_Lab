@@ -1,0 +1,230 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+
+/* Header Styling */
+.header {
+    position: absolute; /* Makes the header fixed relative to the top of the container */
+    top: 0; /* Aligns to the top */
+    right: 0; /* Aligns to the right */
+    padding: 10px 20px;
+    text-align: right; /* Aligns text inside the header */
+    z-index: 1000; /* Ensures it stays above other elements */
+    background-color: transparent; /* No background for header */
+}
+
+.header p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.header a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* Large Top Container */
+#large-container {
+    width: 90%;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    background-color: #e9effc;
+    border-radius: 8px;
+    padding: 1px;
+    margin: 80px auto 20px; /* Adds margin for header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Wrapper for Featured Books */
+.featured-books-wrapper {
+    display: flex;
+    flex-direction: row; /* Ensure horizontal alignment */
+    justify-content: space-evenly; /* Even spacing between items */
+    align-items: center; /* Align items vertically */
+    flex-wrap: nowrap; /* Prevent wrapping to new lines */
+    overflow-x: auto; /* Enable horizontal scrolling if items exceed container */
+    padding: 10px; /* Add padding around the content */
+    gap: 20px; /* Spacing between book items */
+}
+
+/* Individual Featured Book Items */
+.featured-book-item {
+    flex: 0 0 auto; /* Prevent items from resizing unevenly */
+    width: 120px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    text-align: center;
+}
+
+/* Image Styling */
+.featured-book-item img {
+    width: 100%; /* Full width within the item */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+
+/* Row of Small Containers */
+.row-containers {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.small-container ,
+
+
+.smallmid-container {
+    display: flex; /* Use flexbox for better alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 48%; /* Adjust width */
+    height: 250px; /* Ensure sufficient height */
+    background-color: #e9effc; /* Keep the container's background consistent */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    text-align: center; /* Center-align text inside */
+    font-size: 14px; /* Adjust text size for readability */
+    font-weight: bold; /* Make the text more prominent */
+    padding: 10px; /* Add padding for spacing */
+    margin: top; /* Center container in its row */
+}
+
+/* Forms Section */
+.forms-wrapper {
+    display: flex;
+    align-items: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.form-container {
+    width: 30%; /* Narrower width */
+    height: 35%; /* Reduced height from 40% */
+    padding: 15px; /* Reduced padding for a more compact look */
+    background-color: #e9effc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px; /* Smaller font size for text inside */
+}
+
+.form-container h2 {
+    font-size: 18px; /* Reduced font size for heading */
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.form-group label {
+    font-size: 12px; /* Smaller label text */
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
+
+.form-group input[type="radio"] {
+    margin-right: 5px; /* Adds space between radio button and text */
+    vertical-align: middle; /* Aligns the button to the middle of the label */
+}
+
+.radio-group {
+    display: flex; /* Arrange radio buttons horizontally */
+    align-items: center; /* Align text vertically with radio buttons */
+    gap: 10px; /* Add space between radio button groups */
+}
+
+.form-group input,
+
+.form-group select {
+    font-size: 12px; /* Smaller input text */
+    padding: 10px; /* Reduced padding for input fields */
+    margin-bottom: 10px; /* Reduced spacing */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 90%;
+}
+
+.summary-container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e9effc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+.summary-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.summary-container p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.summary-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.summary-container button:hover {
+    background-color: #0056b3;
+}
+
+
+button {
+    font-size: 14px; /* Smaller button text */
+    padding: 8px; /* Reduced button padding */
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row-containers {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .forms-wrapper {
+        flex-direction: column;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+}
