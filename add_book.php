@@ -8,12 +8,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $authorName = htmlspecialchars($_POST['authorName'] ?? '');
     $isbnNo = htmlspecialchars($_POST['isbn_no'] ?? '');
 
-    // Validate input
     if (empty($bookTitle) || empty($authorName) || empty($isbnNo)) {
         die("All fields are required. Please fill out the form completely.");
     }
 
-    // Establish database connection
     $conn = new mysqli("localhost", "root", "", "users_info");
     if ($conn->connect_error) {
         die("Database connection failed: " . $conn->connect_error);

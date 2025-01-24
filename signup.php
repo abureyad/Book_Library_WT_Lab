@@ -8,7 +8,7 @@ if (isset($_SESSION["user_id"])) {
 }
 
 $error = '';
-$conn = new mysqli("localhost", "root", "", "users_info"); // Adjust credentials
+$conn = new mysqli("localhost", "root", "", "users_info");
 if ($conn->connect_error) {
     die("Database connection failed: " . $conn->connect_error);
 }

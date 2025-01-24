@@ -10,13 +10,13 @@ body {
 
 /* Header Styling */
 .header {
-    position: absolute; /* Makes the header fixed relative to the top of the container */
-    top: 0; /* Aligns to the top */
-    right: 0; /* Aligns to the right */
+    position: absolute;
+    top: 0;
+    right: 0;
     padding: 10px 20px;
-    text-align: right; /* Aligns text inside the header */
-    z-index: 1000; /* Ensures it stays above other elements */
-    background-color: transparent; /* No background for header */
+    text-align: right;
+    z-index: 1000;
+    background-color: transparent;
 }
 
 .header p {
@@ -45,36 +45,36 @@ body {
     background-color: #e9effc;
     border-radius: 8px;
     padding: 1px;
-    margin: 80px auto 20px; /* Adds margin for header */
+    margin: 80px auto 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Wrapper for Featured Books */
 .featured-books-wrapper {
     display: flex;
-    flex-direction: row; /* Ensure horizontal alignment */
-    justify-content: space-evenly; /* Even spacing between items */
-    align-items: center; /* Align items vertically */
-    flex-wrap: nowrap; /* Prevent wrapping to new lines */
-    overflow-x: auto; /* Enable horizontal scrolling if items exceed container */
-    padding: 10px; /* Add padding around the content */
-    gap: 20px; /* Spacing between book items */
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 20px;
 }
 
 /* Individual Featured Book Items */
 .featured-book-item {
-    flex: 0 0 auto; /* Prevent items from resizing unevenly */
-    width: 120px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
+    flex: 0 0 auto;
+    width: 120px;
+    height: auto;
     text-align: center;
 }
 
 /* Image Styling */
 .featured-book-item img {
-    width: 100%; /* Full width within the item */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -91,19 +91,19 @@ body {
 
 
 .smallmid-container {
-    display: flex; /* Use flexbox for better alignment */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    width: 48%; /* Adjust width */
-    height: 250px; /* Ensure sufficient height */
-    background-color: #e9effc; /* Keep the container's background consistent */
-    border-radius: 8px; /* Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
-    text-align: center; /* Center-align text inside */
-    font-size: 14px; /* Adjust text size for readability */
-    font-weight: bold; /* Make the text more prominent */
-    padding: 10px; /* Add padding for spacing */
-    margin: top; /* Center container in its row */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 250px;
+    background-color: #e9effc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    margin: top;
 }
 
 /* Forms Section */
@@ -117,24 +117,24 @@ body {
 }
 
 .form-container {
-    width: 30%; /* Narrower width */
-    height: 35%; /* Reduced height from 40% */
-    padding: 15px; /* Reduced padding for a more compact look */
+    width: 30%;
+    height: 35%;
+    padding: 15px;
     background-color: #e9effc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 14px; /* Smaller font size for text inside */
+    font-size: 14px;
 }
 
 .form-container h2 {
-    font-size: 18px; /* Reduced font size for heading */
+    font-size: 18px;
     text-align: center;
     margin-bottom: 15px;
     color: #333;
 }
 
 .form-group label {
-    font-size: 12px; /* Smaller label text */
+    font-size: 12px;
     margin-bottom: 5px;
     color: #333;
 }
@@ -142,22 +142,22 @@ body {
 
 
 .form-group input[type="radio"] {
-    margin-right: 5px; /* Adds space between radio button and text */
-    vertical-align: middle; /* Aligns the button to the middle of the label */
+    margin-right: 5px;
+    vertical-align: middle;
 }
 
 .radio-group {
-    display: flex; /* Arrange radio buttons horizontally */
-    align-items: center; /* Align text vertically with radio buttons */
-    gap: 10px; /* Add space between radio button groups */
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .form-group input,
 
 .form-group select {
-    font-size: 12px; /* Smaller input text */
-    padding: 10px; /* Reduced padding for input fields */
-    margin-bottom: 10px; /* Reduced spacing */
+    font-size: 12px;
+    padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 90%;
@@ -198,8 +198,8 @@ body {
 
 
 button {
-    font-size: 14px; /* Smaller button text */
-    padding: 8px; /* Reduced button padding */
+    font-size: 14px;
+    padding: 8px;
     width: 100%;
     background-color: #007bff;
     border: none;
